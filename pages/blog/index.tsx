@@ -71,7 +71,7 @@ export default function Index() {
   };
 
   //* U P D A T E   R E C O R D
-  const handleUpdateRecord = async (id, title, body) => {
+  const handleUpdateRecord = async (id: number, title: string, body: string) => {
     // console.log("handleUpdateRecord", id, title, body);
     
     fetch("http://localhost:3000/api/updateblogpost", {
@@ -94,7 +94,7 @@ export default function Index() {
   };
 
   //* R E M O V E   R E C O R D
-  const handleRemoveRecord = async (id) => {
+  const handleRemoveRecord = async (id: number) => {
     // console.log("handleRemoveRecord", id);
     setIsDataLoaded(false);
     fetch("http://localhost:3000/api/deleteblogpost", {

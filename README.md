@@ -1,5 +1,5 @@
-# Next.JS MUI version 5.11.x Image Carousel With Zoom
-## Similar to Amazon product page image carousel with zoom
+# Next.JS MUI version 5.11.x Postgres CRUD App
+## Vercel Postgres - Create Read Update Delete Example App
 
 ## List of features for this example
 <ol>

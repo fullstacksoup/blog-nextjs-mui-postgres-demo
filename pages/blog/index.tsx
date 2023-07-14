@@ -26,7 +26,7 @@ export default function Index() {
   //* F E T C H   D A T A
   const fetchData = async () => {
     setIsDataLoaded(false);    
-    const url = "http://localhost:3007/api/getblogposts";    
+    const url = "http://localhost:3000/api/getblogposts";    
     fetch(url)      
       .then((response) => response.json())
       .then((response) => {
@@ -50,7 +50,7 @@ export default function Index() {
 
   //* A D D   R E C O R D
   const handleAddRecord = async () => {    
-    fetch("http://localhost:3007/api/addblogpost", {
+    fetch("http://localhost:3000/api/addblogpost", {
       method: "POST",
       body: JSON.stringify({ title: title, body: body }),
     })
@@ -74,7 +74,7 @@ export default function Index() {
   const handleUpdateRecord = async (id, title, body) => {
     // console.log("handleUpdateRecord", id, title, body);
     
-    fetch("http://localhost:3007/api/updateblogpost", {
+    fetch("http://localhost:3000/api/updateblogpost", {
       method: "POST",
       body: JSON.stringify({ id: id, title: title, body: body }),
     })
@@ -97,7 +97,7 @@ export default function Index() {
   const handleRemoveRecord = async (id) => {
     // console.log("handleRemoveRecord", id);
     setIsDataLoaded(false);
-    fetch("http://localhost:3007/api/deleteblogpost", {
+    fetch("http://localhost:3000/api/deleteblogpost", {
       method: "POST",
       body: JSON.stringify({ id: id }),
     })

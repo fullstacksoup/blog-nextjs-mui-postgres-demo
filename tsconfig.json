@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+        "@/components/*": ["components/*"],
+        "@/src/*": ["src/*"],
+        "@/libs/*": ["libs/*"],
+        "@/styles/*": ["styles/*"],
+        "@/pages/*": ["pages/*"],
+        "@/store/*": ["store/*"]
+
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "lib/seed.ts",
+    "src/UserSearchHistory.js", 
+    "pages/postgres/index.js" 
+  ],
+  "exclude": [
+    "node_modules"
+  ] 
+}
